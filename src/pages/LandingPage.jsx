@@ -6,6 +6,8 @@ import { HiArrowRight } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 
 export default function LandingPage() {
+  document.title = "Water Potability Measurement Web"
+
   return (
     <>
       {/* <Header/> */}

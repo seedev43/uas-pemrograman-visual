@@ -12,6 +12,8 @@ import { BurgerMenu } from '../components/BurgerMenu';
 
 
 export default function Profile() {
+    document.title = "Profile Page"
+
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     const toggleSidebar = () => {
@@ -36,7 +38,7 @@ export default function Profile() {
 
 
     return (
-        <div className="flex">
+        <div className="flex min-h-screen bg-gray-50">
             <SidebarComponent isSidebarOpen={isSidebarOpen} />
 
             {/* Main content area */}
@@ -44,8 +46,8 @@ export default function Profile() {
                 <BurgerMenu sidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
                 {/* Main content */}
-                <div className={`p-6 transition-all duration-300 ${isSidebarOpen ? 'md:ml-64' : 'md:ml-0'} ml-0`}>
-                    <h1 className="text-xl font-bold mb-10">PROFILE</h1>
+                <div className={`mt-14 p-6 transition-all duration-300 ${isSidebarOpen ? 'lg:ml-64' : 'lg:ml-0'} ml-0`}>
+                    <h1 className="text-xl font-bold mb-7">PROFILE</h1>
                     <Card className="relative w-full h-96 bg-[#D4DBF9] shadow-none">
                         <div className="flex justify-between items-center h-full">
                             {/* Bagian kiri */}

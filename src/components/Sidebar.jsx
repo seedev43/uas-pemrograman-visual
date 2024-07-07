@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export function SidebarComponent({ isSidebarOpen }) {
     return (
-        <div className={`fixed top-0 left-0 h-full transition-transform duration-300 transform ${isSidebarOpen ? '-translate-x-full' : 'translate-x-0'} ${isSidebarOpen ? 'md:translate-x-0' : 'md:-translate-x-full'} z-20`}>
+        <div className={`fixed top-0 left-0 h-full transition-transform duration-300 transform ${isSidebarOpen ? '-translate-x-full' : 'translate-x-0'} ${isSidebarOpen ? 'lg:translate-x-0' : 'lg:-translate-x-full'} z-20`}>
             <Sidebar className="w-64 h-full [&>div]:bg-[#333C59] [&>div]:text-white [&>div]:rounded-none">
                 <div className="p-5 flex justify-center mb-10">
                     <img src={logo} alt="logo" className="w-32 h-auto" />

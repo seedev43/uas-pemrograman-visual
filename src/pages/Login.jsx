@@ -5,6 +5,8 @@ import logo from '../assets/logo.png'; // Pastikan path logo sesuai
 import { Link } from 'react-router-dom';
 
 function Login() {
+    document.title = "Login Page"
+
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [formValues, setFormValues] = useState({
         username: '',

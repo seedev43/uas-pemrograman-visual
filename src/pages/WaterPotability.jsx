@@ -23,8 +23,8 @@ export default function WaterPotability() {
                 <BurgerMenu sidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
                 {/* Main content */}
-                <div className={`p-6 transition-all duration-300 ${isSidebarOpen ? 'md:ml-64' : 'md:ml-0'} ml-0`}>
-                    <h1 className="text-xl font-normal mb-10">WATER POTABILITY CLASSIFICATION (KLASIFIKASI  KELAYAKAN AIR MINUM)</h1>
+                <div className={`mt-14 p-6 transition-all duration-300 ${isSidebarOpen ? 'lg:ml-64' : 'lg:ml-0'} ml-0`}>
+                    <h1 className="text-xl font-bold mb-7">WATER POTABILITY CLASSIFICATION (KLASIFIKASI  KELAYAKAN AIR MINUM)</h1>
                     <Card className="relative w-full h-auto bg-white shadow-none border-none">
                         <span className="text-black font-bold">Klasifikasi Dataset Water Potability menggunakan algoritma Random Forest Classifier</span>
                         <Button className="bg-[#3C66FD] hover:!bg-[#2749c5] w-48">Generate random data</Button>
