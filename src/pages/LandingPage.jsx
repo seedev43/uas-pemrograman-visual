@@ -50,7 +50,7 @@ export default function LandingPage() {
       </section>
 
       {/* Contact Us Section */}
-      <section className="py-16">
+      <section className="py-16" id="contact">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
           <form className="max-w-lg mx-auto space-y-4">

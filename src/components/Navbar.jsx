@@ -8,6 +8,15 @@ export function Nav() {
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
+
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+
   };
 
   return (
@@ -27,6 +36,7 @@ export function Nav() {
       </div>
       <NavbarCollapse>
         <NavbarLink className="cursor-pointer" onClick={scrollToAbout}>About</NavbarLink>
+        <NavbarLink className="cursor-pointer" onClick={scrollToContact}>Contact</NavbarLink>
       </NavbarCollapse>
     </Navbar>
   );
