@@ -23,7 +23,6 @@ export function Nav() {
     <Navbar fluid rounded>
       <NavbarBrand href="/">
         <img src={logo} className="mr-3 h-6 sm:h-9" alt="Logo" />
-        {/* <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span> */}
       </NavbarBrand>
       <div className="flex md:order-2 space-x-4">
         <Link to="/login">
@@ -41,3 +40,4 @@ export function Nav() {
     </Navbar>
   );
 }
+
