@@ -1,4 +1,3 @@
-import { Header } from '../components/Header'
 import { Nav } from '../components/Navbar'
 import background from '../assets/background.png'
 import { Footer } from '../components/Footer'
@@ -10,9 +9,7 @@ export default function LandingPage() {
 
   return (
     <>
-      {/* <Header/> */}
       <Nav />
-      {/* <div className="container mx-auto px-4"> */}
       <section className="relative py-8 h-72 flex items-center justify-center">
         <div className="absolute bottom-0 flex items-center justify-center">
           <h1 className="font-bold text-center text-4xl">Water Potability <br />Measurement Web</h1>
@@ -23,8 +20,7 @@ export default function LandingPage() {
         <img
           src={background}
           className="w-full mx-auto h-auto object-cover"
-          alt="Water Testing"
-        />
+          alt="Water Testing" />
         <div className="absolute top-3 left-1/2 transform -translate-x-1/2 z-10 text-center">
           <p className="text-xl mb-4">
             Ukur kualitas air minum anda, agar tidak keracunan Bakteri E. Colay
@@ -67,8 +63,7 @@ export default function LandingPage() {
                   className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
                   type="text"
                   id="fullname"
-                  placeholder="Your full name"
-                />
+                  placeholder="Your full name" />
               </div>
               <div className="w-1/2">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
@@ -78,8 +73,7 @@ export default function LandingPage() {
                   className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
                   type="email"
                   id="email"
-                  placeholder="Your email address"
-                />
+                  placeholder="Your email address" />
               </div>
             </div>
             <div>
@@ -90,14 +84,13 @@ export default function LandingPage() {
                 className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
                 id="message"
                 rows="4"
-                placeholder="Your message"
-              ></textarea>
+                placeholder="Your message">
+              </textarea>
             </div>
             <div className="text-center">
               <button
                 className="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600 focus:outline-none focus:ring"
-                type="submit"
-              >
+                type="submit">
                 Send Message
               </button>
             </div>
