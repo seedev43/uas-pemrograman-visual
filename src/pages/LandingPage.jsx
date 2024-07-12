@@ -27,7 +27,7 @@ export default function LandingPage() {
       <section className="relative">
         <img
           src={background}
-          className="w-full h-[880px] object-cover object-top"
+          className="w-full h-full object-cover object-top"
           alt="Water Testing" />
         <div className="absolute inset-0 bg-gradient-to-b from-white flex items-center justify-center">
         </div>
