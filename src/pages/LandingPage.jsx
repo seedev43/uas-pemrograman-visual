@@ -3,6 +3,7 @@ import background from '../assets/background.png'
 import { Footer } from '../components/Footer'
 import { HiArrowRight } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
+import { Button } from 'flowbite-react'
 
 export default function LandingPage() {
   document.title = "Water Potability Measurement Web"
@@ -10,30 +11,26 @@ export default function LandingPage() {
   return (
     <>
       <Nav />
-      <section className="relative py-8 h-72 flex items-center justify-center">
-        <div className="absolute bottom-0 flex items-center justify-center">
-          <h1 className="font-bold text-center text-4xl">Water Potability <br />Measurement Web</h1>
+      <section className="py-8 h-96 flex items-center justify-center">
+        <div className="flex flex-col items-center h-full gap-4">
+          <h1 className="font-bold text-center text-4xl mt-auto">Water Potability <br />Measurement Web</h1>
+          <p className="text-xl text-center">
+            Ukur kualitas air minum anda, agar tidak keracunan Bakteri E. Colay
+          </p>
+          <Button className="bg-cyan-500">
+            SIGN UP
+            <HiArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </section>
 
       <section className="relative">
         <img
           src={background}
-          className="w-full mx-auto h-auto object-cover"
+          className="w-full h-[880px] object-cover object-top"
           alt="Water Testing" />
-        <div className="absolute top-3 left-1/2 transform -translate-x-1/2 z-10 text-center">
-          <p className="text-xl mb-4">
-            Ukur kualitas air minum anda, agar tidak keracunan Bakteri E. Colay
-          </p>
-          <div className="flex justify-center">
-            <Link to="/login">
-              <button className="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600 focus:outline-none focus:ring flex items-center">
-                SIGN UP <HiArrowRight className="ml-2" />
-              </button>
-            </Link>
-          </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white flex items-center justify-center">
         </div>
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full bg-gradient-to-b from-white"></div>
       </section>
 
       {/* About Us Section */}
@@ -103,4 +100,3 @@ export default function LandingPage() {
     </>
   )
 }
-
