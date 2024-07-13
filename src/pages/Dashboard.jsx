@@ -22,30 +22,35 @@ export default function Dashboard() {
     return (
         <Layout>
             <h1 className="text-xl font-bold mb-7">DASHBOARD</h1>
-            <Card className="relative w-full h-96 bg-[#D4DBF9] shadow-none">
-                <p className="text-gray-700 dark:text-gray-400 font-normal mt-0 mb-auto">Welcome!</p>
-                <img src={pictDashboard} className="absolute w-72 h-auto right-0 top-16" />
-                <div className="absolute bottom-0 left-0 right-0 bg-white h-32 z-0"></div>
-                <div className="absolute bottom-10 left-0 right-0 flex justify-between items-center px-4 md:px-10">
-                    <div className="flex flex-col items-center">
+            {/* <div className="flex"> */}
+            <div className="w-full h-auto bg-white rounded-lg overflow-hidden drop-shadow">
+                <div className="h-auto bg-[#D4DBF9] flex flex-col">
+                    <span className="p-5 text-gray-700">Welcome !</span>
+                    <img src={pictDashboard} className="w-60 md:w-96 self-end" />
+                </div>
+                <div className="pl-8 pr-8 flex flex-wrap justify-between -mt-8 mb-8">
+                    <div className="flex flex-col">
                         <img src={profilePicture} className="w-16 h-auto border-2 border-blue-800 rounded-full mb-2" />
                         <span className="text-black">Ngademin</span>
-                        <p className="text-black font-light">Creator</p>
+                        <p className="text-gray-500 font-light">Creator</p>
                     </div>
-
-                    <div className="flex flex-col items-center mt-10">
+                    <div className="flex flex-col mt-10">
                         <span className="text-black">{currentDate}</span>
                         <Link to="/profile">
-                            <button className="mt-2 flex items-center bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600">
+                            <button className="mt-6 flex items-center bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600">
                                 View Profile <HiArrowRight className="ml-2" />
                             </button>
                         </Link>
                     </div>
+                    <div className="flex flex-col mt-10">
+                        <span className="text-black">Tetap semangat jangan menyerah</span>
+                        <span className="text-gray-500">Quotes of the day</span>
+                    </div>
 
-                    <span className="text-black text-center">Tetap semangat jangan menyerah</span>
                 </div>
+            </div>
+            {/* </div> */}
 
-            </Card>
         </Layout>
 
     );
