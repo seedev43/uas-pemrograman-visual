@@ -17,10 +17,12 @@ export default function LandingPage() {
           <p className="text-xl text-center">
             Ukur kualitas air minum anda, agar tidak keracunan Bakteri E. Colay
           </p>
-          <Button className="bg-cyan-500">
-            SIGN UP
-            <HiArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link to="/register">
+            <Button className="bg-cyan-500">
+              SIGN UP
+              <HiArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 
